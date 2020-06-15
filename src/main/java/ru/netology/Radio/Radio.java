@@ -9,22 +9,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Radio {
 
-    private int currentStation;
+    private int currentStation = 5;
     private int maxStationNumber = 10;
     private int minStationNumber = 0;
 
-    private int volume;
+    private int volume = 50;
     private int maxVolume = 100;
     private int minVolume = 0;
-
-    public Radio(int currentStation, int maxStationNumber) {
-        this.currentStation = currentStation;
-        this.maxStationNumber = maxStationNumber;
-    }
-
-    public Radio(int volume) {
-        this.volume = volume;
-    }
 
     public void nextStationButton() {
         currentStation++;
